@@ -46,5 +46,12 @@ class AppTest {
         int number = binToDec.convert("10000001");
         assertEquals(129, number);
     }
+
+    @Test
+    public void shouldReturnDecimalValueOfFifteen() {
+        App binToDec = new App();
+        int number = binToDec.convert("1111");
+        assertEquals(15, number);
+    }
 }
 

@@ -9,7 +9,7 @@ public class App {
 
     public int convert(String binaryNumber) {
         int sum = 0;
-        int position = 7;
+        int position = binaryNumber.length() - 1;
         for (String letter : binaryNumber.split("")) {
             int binary = Integer.parseInt(letter);
             sum += binary * Math.pow(2, position);
