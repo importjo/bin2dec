@@ -4,11 +4,11 @@
 package bin2dec;
 
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    }
+
+    public int Convert(String binaryNumber) {
+        return 0;
     }
 }
