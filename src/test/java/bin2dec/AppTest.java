@@ -8,35 +8,35 @@ class AppTest {
     //@Test
     //public void shouldReturnDecimalValueOfBinary() {
     //    App binToDec = new App();
-    //    int number = binToDec.Convert("00001111");
+    //    int number = binToDec.convert("00001111");
     //    assertEquals(15, number);
     //}
     
     @Test
     public void shouldReturnDecimalValueOfZero() {
         App binToDec = new App();
-        int number = binToDec.Convert("00000000");
+        int number = binToDec.convert("00000000");
         assertEquals(0, number);
     }
 
     @Test
     public void shouldReturnDecimalValueOfOne() {
         App binToDec = new App();
-        int number = binToDec.Convert("00000001");
+        int number = binToDec.convert("00000001");
         assertEquals(1, number);
     }
 
     @Test
     public void shouldReturnDecimalValueOfTwo() {
         App binToDec = new App();
-        int number = binToDec.Convert("00000010");
+        int number = binToDec.convert("00000010");
         assertEquals(2, number);
     }
 
     @Test
     public void shouldReturnDecimalValueOfThree() {
         App binToDec = new App();
-        int number = binToDec.Convert("00000011");
+        int number = binToDec.convert("00000011");
         assertEquals(3, number);
     }
 }

@@ -8,7 +8,7 @@ public class App {
     public static void main(String[] args) {
     }
 
-    public int Convert(String binaryNumber) {
+    public int convert(String binaryNumber) {
         if (binaryNumber.equals("00000010")) {
             return 2;
         }
@@ -16,5 +16,9 @@ public class App {
             return 3;
         }
         return binaryNumber.equals("00000001") ? 1 : 0;
+    }
+    
+    private int mathConvert(String binaryNumber) {
+        return 0;
     }
 }
