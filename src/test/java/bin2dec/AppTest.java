@@ -18,4 +18,11 @@ class AppTest {
         int number = binToDec.Convert("00000000");
         assertEquals(0, number);
     }
+
+    @Test
+    public void shouldReturnDecimalValueOfOne() {
+        App binToDec = new App();
+        int number = binToDec.Convert("00000001");
+        assertEquals(1, number);
+    }
 }
