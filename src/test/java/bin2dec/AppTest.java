@@ -15,7 +15,7 @@ class AppTest {
     @Test
     public void shouldReturnDecimalValueOfZero() {
         App binToDec = new App();
-        int number = binToDec.Convert("00000001");
+        int number = binToDec.Convert("00000000");
         assertEquals(0, number);
     }
 }
