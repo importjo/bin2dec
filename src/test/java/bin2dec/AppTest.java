@@ -8,7 +8,7 @@ class AppTest {
     //@Test
     //public void shouldReturnDecimalValueOfBinary() {
     //    App binToDec = new App();
-    //    int number = binToDec.convert("00001111");
+    //    int number = binToDec.main("00001111");
     //    assertEquals(15, number);
     //}
     
