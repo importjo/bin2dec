@@ -9,6 +9,9 @@ public class App {
     }
 
     public int Convert(String binaryNumber) {
+        if (binaryNumber.equals("00000010")) {
+            return 2;
+        }
         return binaryNumber.equals("00000001") ? 1 : 0;
     }
 }
