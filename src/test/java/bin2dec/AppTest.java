@@ -32,5 +32,12 @@ class AppTest {
         int number = binToDec.Convert("00000010");
         assertEquals(2, number);
     }
+
+    @Test
+    public void shouldReturnDecimalValueOfThree() {
+        App binToDec = new App();
+        int number = binToDec.Convert("00000011");
+        assertEquals(3, number);
+    }
 }
 

@@ -12,6 +12,9 @@ public class App {
         if (binaryNumber.equals("00000010")) {
             return 2;
         }
+        if (binaryNumber.equals("00000011")) {
+            return 3;
+        }
         return binaryNumber.equals("00000001") ? 1 : 0;
     }
 }
