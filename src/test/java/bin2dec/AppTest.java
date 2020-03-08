@@ -39,5 +39,12 @@ class AppTest {
         int number = binToDec.convert("00000011");
         assertEquals(3, number);
     }
+
+    @Test
+    public void shouldReturnDecimalValueOfOnehundredTwentyNine() {
+        App binToDec = new App();
+        int number = binToDec.convert("10000001");
+        assertEquals(129, number);
+    }
 }
 
