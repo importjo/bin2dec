@@ -53,5 +53,12 @@ class AppTest {
         int number = binToDec.convert("1111");
         assertEquals(15, number);
     }
+
+    @Test
+    public void shouldReturnDecimalValueOfFifteenWithHeadingZero() {
+        App binToDec = new App();
+        int number = binToDec.convert("00001111");
+        assertEquals(15, number);
+    }
 }
 
