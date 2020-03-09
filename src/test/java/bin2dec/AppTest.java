@@ -17,7 +17,8 @@ class AppTest {
     }
     
     @ParameterizedTest
-    @CsvSource({ "00000000, 0" })
+    @CsvSource({
+         "00000000, 0" })
     public void shouldReturnDecimalValueOfZero(String number, int expected) {
         int actual = binToDec.convert(number);
         assertEquals(expected, actual);
