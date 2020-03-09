@@ -10,8 +10,8 @@ public class App {
     public int convert(String binaryNumber) {
         int sum = 0;
         int position = binaryNumber.length() - 1;
-        for (String letter : binaryNumber.split("")) {
-            int binary = Integer.parseInt(letter);
+        for (int i = 0; i < binaryNumber.length(); i++) {
+            int binary = binaryNumber.charAt(i) - '0';
             sum += binary * Math.pow(2, position);
             position--;
         }
