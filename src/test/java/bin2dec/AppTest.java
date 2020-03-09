@@ -13,12 +13,6 @@ class AppTest {
     public void init() {
         binToDec = new App();
     }
-    //@Test
-    //public void shouldReturnDecimalValueOfBinary() {
-    //    App binToDec = new App();
-    //    int number = binToDec.main(new String[] {"00001111"});
-    //    assertEquals(15, number);
-    //}
     
     @Test
     public void shouldReturnDecimalValueOfZero() {
