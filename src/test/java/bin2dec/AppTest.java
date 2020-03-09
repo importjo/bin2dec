@@ -62,13 +62,22 @@ class AppTest {
         assertEquals(15, number);
     }
 
-
     @Test
     public void shouldContainOnlyZeroOrOneNumbers() {
         assertThrows(IllegalArgumentException.class, () -> {
             App binToDec = new App();
             binToDec.main(new String[] {"aabbccdd"});
         });
+    }
+
+    @Test
+    public void shouldNotCatchExceptionWithZeroOrOneNumber() {
+        try {
+            App binToDec = new App();
+            binToDec.main(new String[] {"1111"});
+        } catch (IllegalArgumentException ex) {
+            fail("Should not catch exception.");
+        }
     }
 }
 
