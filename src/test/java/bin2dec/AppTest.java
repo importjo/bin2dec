@@ -81,7 +81,7 @@ class AppTest {
     }
     
     @Test
-    public void shouldContainInputWithMaxEightDigits() {
+    public void shouldContainInputWithEightDigitsMax() {
         assertThrows(IllegalArgumentException.class, () -> {
             App binToDec = new App();
             binToDec.main(new String[] {"000000001"});
