@@ -11,7 +11,8 @@ public class App {
         int sum = 0;
         int position = binaryNumber.length() - 1;
         for (int i = 0; i < binaryNumber.length(); i++) {
-            int binary = binaryNumber.charAt(i) - '0';
+            char character = binaryNumber.charAt(i);
+            int binary = character - '0';
             sum += binary * Math.pow(2, position);
             position--;
         }
