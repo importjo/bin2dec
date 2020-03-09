@@ -2,6 +2,8 @@ package bin2dec;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.*;
 import java.lang.IllegalArgumentException;
 
@@ -14,10 +16,11 @@ class AppTest {
         binToDec = new App();
     }
     
-    @Test
-    public void shouldReturnDecimalValueOfZero() {
-        int number = binToDec.convert("00000000");
-        assertEquals(0, number);
+    @ParameterizedTest
+    @CsvSource({ "00000000, 0" })
+    public void shouldReturnDecimalValueOfZero(String number, int expected) {
+        int actual = binToDec.convert(number);
+        assertEquals(expected, actual);
     }
 
     @Test
