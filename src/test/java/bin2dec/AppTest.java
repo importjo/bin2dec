@@ -19,15 +19,12 @@ class AppTest {
     @ParameterizedTest
     @CsvSource({
          "00000000, 0",
-         "00000001, 1" })
+         "00000001, 1",
+         "00000010, 2",
+         "00000011, 3"
+     })
     public void shouldConvertBinaryToDecimal(String number, int expected) {
         assertEquals(expected, binToDec.convert(number));
-    }
-
-    @Test
-    public void shouldReturnDecimalValueOfOne() {
-        int number = binToDec.convert("00000001");
-        assertEquals(1, number);
     }
 
     @Test
