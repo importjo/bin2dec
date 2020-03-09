@@ -5,6 +5,13 @@ import java.lang.Math;
 public class App {
   
     public static void main(String[] args) {
+        validateBinary(args);
+    }
+
+    private static void validateBinary(String[] input) {
+        if (!input[0].matches("[0-1]+"))
+            throw new IllegalArgumentException(
+                "Should contain only zero or one.");
     }
 
     public int convert(String number) {

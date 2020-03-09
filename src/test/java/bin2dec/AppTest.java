@@ -2,6 +2,7 @@ package bin2dec;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.lang.IllegalArgumentException;
 
 class AppTest {
 
@@ -59,6 +60,15 @@ class AppTest {
         App binToDec = new App();
         int number = binToDec.convert("00001111");
         assertEquals(15, number);
+    }
+
+
+    @Test
+    public void shouldContainOnlyZeroOrOneNumbers() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            App binToDec = new App();
+            binToDec.main(new String[] {"aabbccdd"});
+        });
     }
 }
 
