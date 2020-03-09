@@ -34,7 +34,7 @@ public class App {
         return decimal;
     }
 
-    private void showResult(int result) {
+    public void showResult(int result) {
         System.out.println(result);
     }
 }
