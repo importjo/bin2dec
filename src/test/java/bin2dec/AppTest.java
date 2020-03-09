@@ -21,7 +21,8 @@ class AppTest {
          "00000000, 0",
          "00000001, 1",
          "00000010, 2",
-         "00000011, 3"
+         "00000011, 3",
+         "10000001, 129"
      })
     public void shouldConvertBinaryToDecimal(String number, int expected) {
         assertEquals(expected, binToDec.convert(number));
