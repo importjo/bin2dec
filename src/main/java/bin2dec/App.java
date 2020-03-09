@@ -6,12 +6,19 @@ public class App {
   
     public static void main(String[] args) {
         validateBinary(args);
+        validateBinaryLength(args);
     }
 
     private static void validateBinary(String[] input) {
         if (!input[0].matches("[0-1]+"))
             throw new IllegalArgumentException(
                 "Should contain only zero or one.");
+    }
+
+    private static void validateBinaryLength(String[] input) {
+        if (input[0].length() > 8)
+            throw new IllegalArgumentException(
+                "Should be eight digits number.");
     }
 
     public int convert(String number) {

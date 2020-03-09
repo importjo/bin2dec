@@ -79,5 +79,13 @@ class AppTest {
             fail("Should not catch exception.");
         }
     }
+    
+    @Test
+    public void shouldContainInputWithMaxEightDigits() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            App binToDec = new App();
+            binToDec.main(new String[] {"000000001"});
+        });
+    }
 }
 
