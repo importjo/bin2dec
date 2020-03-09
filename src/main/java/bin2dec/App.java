@@ -5,17 +5,19 @@ import java.lang.Math;
 public class App {
   
     public static void main(String[] args) {
-        validateBinary(args);
-        validateBinaryLength(args);
+        App binToDec = new App();
+        binToDec.validateBinary(args);
+        binToDec.validateBinaryLength(args);
+        binToDec.showResult(binToDec.convert(args[0]));
     }
 
-    private static void validateBinary(String[] input) {
+    private void validateBinary(String[] input) {
         if (!input[0].matches("[0-1]+"))
             throw new IllegalArgumentException(
                 "Should contain only zero or one.");
     }
 
-    private static void validateBinaryLength(String[] input) {
+    private void validateBinaryLength(String[] input) {
         if (input[0].length() > 8)
             throw new IllegalArgumentException(
                 "Should be eight digits number.");
@@ -30,5 +32,9 @@ public class App {
             position--;
         }
         return decimal;
+    }
+
+    private void showResult(int result) {
+        System.out.println(result);
     }
 }

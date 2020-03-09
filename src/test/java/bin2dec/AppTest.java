@@ -62,5 +62,12 @@ class AppTest {
             binToDec.main(new String[] {"000000001"});
         });
     }
-}
+
+    @Test
+    public void shouldShowBinaryToDecimalResult() {
+        //binToDec = new AppMock();
+        //binToDec.main(new String[] {"00001111"});
+        //assertTrue(binToDec.verify()); 
+    }
+} 
 
