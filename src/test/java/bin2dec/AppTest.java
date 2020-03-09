@@ -20,7 +20,7 @@ class AppTest {
     @CsvSource({
          "00000000, 0",
          "00000001, 1" })
-    public void shouldReturnDecimalValueOfZero(String number, int expected) {
+    public void shouldConvertBinaryToDecimal(String number, int expected) {
         int actual = binToDec.convert(number);
         assertEquals(expected, actual);
     }
