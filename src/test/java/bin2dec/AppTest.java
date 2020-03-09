@@ -65,6 +65,7 @@ class AppTest {
 
     @Test
     public void shouldShowBinaryToDecimalResult() {
+        AppMock binToDec = new AppMock();
     }
 } 
 
