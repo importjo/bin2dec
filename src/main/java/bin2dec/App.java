@@ -12,7 +12,7 @@ public class App {
         int position = binaryNumber.length() - 1;
         for (int i = 0; i < binaryNumber.length(); i++) {
             char character = binaryNumber.charAt(i);
-            int binary = character - '0';
+            int binary = Character.getNumericValue(character);
             sum += binary * Math.pow(2, position);
             position--;
         }
