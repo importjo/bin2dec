@@ -28,18 +28,6 @@ class AppTest {
     }
 
     @Test
-    public void shouldReturnDecimalValueOfTwo() {
-        int number = binToDec.convert("00000010");
-        assertEquals(2, number);
-    }
-
-    @Test
-    public void shouldReturnDecimalValueOfThree() {
-        int number = binToDec.convert("00000011");
-        assertEquals(3, number);
-    }
-
-    @Test
     public void shouldReturnDecimalValueOfOnehundredTwentyNine() {
         int number = binToDec.convert("10000001");
         assertEquals(129, number);
